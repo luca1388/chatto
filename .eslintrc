@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "semi": "error",
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "keyword-spacing": ["error", {
+            "before": true,
+            "after": true
+        }],
+        "space-before-blocks": ["error"],
+        "no-console": 0,
+        "react/jsx-uses-react": "error", // Prevent React to be incorrectly marked as unused
+        "react/jsx-uses-vars": "error", // Prevent variables used in JSX to be incorrectly marked as unused
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    }
+}
