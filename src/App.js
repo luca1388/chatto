@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import css from './App.css';
 import io from 'socket.io-client';
+import { IoMdSend } from "react-icons/io";
+
 const socket = io('http://192.168.0.13:3000');
 
 const App = props => {
@@ -67,7 +69,7 @@ const App = props => {
 
     return (
         <div className={css.App}>
-            <h1>Chat demo</h1>
+            {/*<h1>Chat demo</h1>*/}
             <p className={css.Username}>Your username: <input type='text' value={userName} onChange={onUsernameChangeHandler} /></p>
             <ul className={css.Messages} id="messages">{messageList.map((msg, index) => {
                 return <li style={{ color: msg.color }} className={css.Message} key={index}>
@@ -80,8 +82,8 @@ const App = props => {
                     {userTyping ? <div className={css.Typing}>{userTyping} is typing ...</div> : null}
                     <div className={css.InputWrapper}>
                         <input className={css.InputMessage} placeholder="Enter your message" onChange={onMessageChangeHandler} type='text' value={message} />
+                        <IoMdSend onClick={onSendHandler} className={css.SendIcon} />
                     </div>
-                    <button onClick={onSendHandler} className={css.SendButton}>Send</button>
                 </form>
             </div>
 
