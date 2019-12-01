@@ -7,69 +7,10 @@
     padding: 15px 0;
 }
 
-.Messages {
-    list-style-type: none; margin: 0; padding: 0;
-    flex: 1;
-    flex-grow: 1;
-    overflow: auto;
-}
-
-.Message {
-    padding: 10px;
-    font-size: 18px;
-}
-
 .Username {
     padding: 15px 0;
 }
 
-.Message:nth-child(odd) { background: #eee; }
-
-.Message:nth-child(even) { background: #fff; }
-
-.SendButtonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
-
-.SendButtonContainer form {
-    width: 100%;
-}
-
-.InputWrapper {
-    margin: 15px;
-    border: 1px solid #aaa;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.InputMessage {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    flex: 1;
-}
-
-.SendIcon {
-    margin: 0 10px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.SendButton {
-    width: 8%;
-    height: 40px;
-    min-width: 50px;
-    margin: 15px;
-}
 
 .Typing {
     padding-left: 30px;

@@ -1,0 +1,43 @@
+.SendButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.SendButtonContainer form {
+    width: 100%;
+}
+
+.InputWrapper {
+    margin: 15px;
+    border: 1px solid #aaa;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.InputMessage {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.SendIcon {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.SendButton {
+    width: 8%;
+    height: 40px;
+    min-width: 50px;
+    margin: 15px;
+}

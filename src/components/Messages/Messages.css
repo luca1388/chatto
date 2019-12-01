@@ -1,0 +1,14 @@
+.Messages {
+    list-style-type: none; margin: 0; padding: 0;
+    flex: 1;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.Message {
+    padding: 10px;
+    font-size: 18px;
+}
+.Message:nth-child(odd) { background: #eee; }
+
+.Message:nth-child(even) { background: #fff; }
