@@ -18,7 +18,8 @@ io.on('connection', socket => {
 
     socket.emit('welcome', {
         // username: 'Anonymous',
-        color: Colors[parseInt(Math.random() * Colors.length)]
+        color: Colors[parseInt(Math.random() * Colors.length)],
+        id: socket.id
     });
 
     socket.on('disconnect', () => {
@@ -31,6 +32,7 @@ io.on('connection', socket => {
     });
 
     socket.on('typing', data => {
+        console.log(data);
         socket.broadcast.emit('typing', data);
     })
 });

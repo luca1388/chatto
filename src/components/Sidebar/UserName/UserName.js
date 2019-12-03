@@ -19,12 +19,12 @@ const UserName = props => {
     };
 
     return (
-        <p className={css.Username}>
+        <div className={css.Username}>
             <form onSubmit={onClickHandler}>
                 Chat as: <input disabled={disabled} type='text' placeholder="Your nickname" onChange={onChangeNameHandler} />
                 <button disabled={disabled} onClick={onClickHandler}>Join!</button>
             </form>
-        </p>
+        </div>
     );
 };
 

@@ -11,7 +11,7 @@
 }
 
 .InputWrapper {
-    margin: 15px;
+    margin: 0 15px;
     border: 1px solid #aaa;
     flex: 1;
     display: flex;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.InputWrapper.disabled {
+.InputWrapper.disabled, .InputWrapper.disabled input {
     background-color: rgb(235, 235, 228);
 }
 
@@ -44,4 +44,16 @@
     height: 40px;
     min-width: 50px;
     margin: 15px;
+}
+
+.TypingUsers {
+    margin: 0 15px;
+    font-style: italic;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.UserMessageContainer {
+    display: flex;
+    flex-direction: column;
 }
