@@ -1,4 +1,4 @@
 .Sidebar {
-    width: 30%;
+    /* min-width: 30%; */
     border-right: solid 1px #ccc;
 }

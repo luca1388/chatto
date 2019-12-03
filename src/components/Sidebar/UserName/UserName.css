@@ -1,3 +1,18 @@
 .Username {
-    padding: 15px 0;
+    padding: 15px;
+}
+
+.JoinButton {
+    padding: 10px;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.InputContainer input {
+    padding: 10px;
 }
