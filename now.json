@@ -1,0 +1,9 @@
+
+{
+    "version": 2,
+    "name": "chatto",
+    "builds": [{
+        "src": "./server/server.js",
+        "use": "@now/node-server"
+    }]
+}
