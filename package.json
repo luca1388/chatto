@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./server/server.js",
-    "build": "webpack --progress --config webpack.prod.js",
+    "build": "npm run build && node ./server/server.js",
+    "start": "webpack --progress --config webpack.prod.js",
     "watch": "webpack-dev-server --config webpack.dev.js",
     "dev": "concurrently \"npm run server\" \"npm run watch\"",
     "debug": "webpack --progress --config webpack.dev.js",
