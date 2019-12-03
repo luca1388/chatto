@@ -3,7 +3,7 @@
     "version": 2,
     "name": "chatto",
     "builds": [{
-        "src": "./server/server.js",
+        "src": "*.js",
         "use": "@now/node-server"
     }]
 }
