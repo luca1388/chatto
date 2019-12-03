@@ -20,9 +20,14 @@ const UserName = props => {
 
     return (
         <div className={css.Username}>
-            <form onSubmit={onClickHandler}>
-                Chat as: <input disabled={disabled} type='text' placeholder="Your nickname" onChange={onChangeNameHandler} />
-                <button disabled={disabled} onClick={onClickHandler}>Join!</button>
+            <form className={css.InputContainer} onSubmit={onClickHandler}>
+                <input 
+                    disabled={disabled} 
+                    type='text' 
+                    placeholder="Your nickname" 
+                    onChange={onChangeNameHandler} 
+                />
+                <button className={css.JoinButton} disabled={disabled} onClick={onClickHandler}>Join!</button>
             </form>
         </div>
     );
