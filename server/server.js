@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
+const path = require('path');
 
 const Colors = require('../Constants/Colors');
 
@@ -38,7 +39,7 @@ io.on('connection', socket => {
 });
 
 app.get('/', (req, res) => 
-    res.send('Hello world')
+    res.sendFile(path.join(__dirname + '/dist/index.html'))
 );
 
 
