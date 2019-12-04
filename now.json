@@ -3,7 +3,7 @@
     "version": 2,
     "name": "chatto",
     "builds": [{
-        "src": "./server/server.js",
+        "src": "./server.js",
         "use": "@now/node-server"
     }],
     "routes": [{
@@ -13,6 +13,6 @@
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
         },
         "src": "/.*",
-        "dest": "server/server.js"
+        "dest": "server.js"
     }]
 }
