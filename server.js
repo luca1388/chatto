@@ -7,7 +7,7 @@ const path = require('path');
 const Colors = require('./Constants/Colors');
 
 const SERVER_PORT = process.env.PORT || 3000;
-const STATIC_DIR = 'dist';
+const STATIC_DIR = './dist';
 
 app.use(express.static(STATIC_DIR));
 
@@ -40,7 +40,7 @@ io.on('connection', socket => {
 
 app.get('/', (req, res) => {
     console.log(__dirname);
-    res.sendFile(path.join(__dirname + '/dist/index.html'))
+    res.sendFile('/dist/index.html')
 });
 
 

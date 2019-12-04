@@ -5,6 +5,9 @@
     "builds": [{
         "src": "./server.js",
         "use": "@now/node-server"
+    }, { 
+        "src": "*.html", 
+        "use": "@now/static" 
     }],
     "routes": [{
         "headers": {
