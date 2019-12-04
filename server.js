@@ -39,10 +39,10 @@ io.on('connection', socket => {
     })
 });
 
-// app.get('/', (req, res) => {
-//     console.log(__dirname);
-//     res.sendFile('/dist/index.html')
-// });
+app.get('/', (req, res) => {
+    console.log(__dirname);
+    res.sendFile('./dist/index.html', { root: __dirname });
+});
 
 
 http.listen(SERVER_PORT, () => {
