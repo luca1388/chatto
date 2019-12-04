@@ -39,7 +39,7 @@ io.on('connection', socket => {
 });
 
 app.get('/', (req, res) => 
-    res.sendFile('../dist/index.html')
+    res.sendFile(path.join(__dirname + '/../dist/index.html'))
 );
 
 
