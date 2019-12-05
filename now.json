@@ -8,6 +8,9 @@
     }, { 
         "src": "*.html", 
         "use": "@now/static" 
+    }, { 
+        "src": "*.js", 
+        "use": "@now/static" 
     }],
     "routes": [{
         "headers": {
