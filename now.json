@@ -9,7 +9,7 @@
         "src": "*.html", 
         "use": "@now/static" 
     }, { 
-        "src": "./dist/*.js", 
+        "src": "./dist/*", 
         "use": "@now/static" 
     }],
     "routes": [{
