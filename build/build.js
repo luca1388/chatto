@@ -1,3 +1,4 @@
 const { readFileSync } = require('fs');
 const { join } = require('path');
-const file = readFileSync(join(__dirname, '../dist', '*.js'), 'utf8');
+const files = fs.readdirSync(join(__dirname, '../dist'));
+// const file = readFileSync(join(__dirname, '../dist', ''), 'utf8');
