@@ -28,19 +28,16 @@ io.on('connection', socket => {
         console.log('Disconnect');
     });
     socket.on('new-message', message => {
-        console.log(message);
         socket.broadcast.emit('new-message', message);
         // io.emit('new-message', message);
     });
 
     socket.on('typing', data => {
-        console.log(data);
         socket.broadcast.emit('typing', data);
     })
 });
 
 app.get('/', (req, res) => {
-    console.log(__dirname);
     res.sendFile('./dist/index.html', { root: __dirname });
 });
 
